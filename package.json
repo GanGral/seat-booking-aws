@@ -14,6 +14,7 @@
     },
     "scripts": {
         "dev:frontend": "react-scripts --openssl-legacy-provider start",
+        "dev:frontendNoSSL": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
