@@ -10,15 +10,15 @@ export const  FlightProvider = ({children}) => {
       
    
         useEffect(() => {
-//            fetch("/api/get-flights")
-            fetch("/test")
-            .then ((res) => res.text())
-            //.then ((res) => res.json())
-        //     .then((data)=> {
-        //         console.log(data.data);
-        //         setFlightsList(data.data);
+            fetch("/api/get-flights")
+            //fetch("/test")
+            //.then ((res) => res.text())
+            .then ((res) => res.json())
+             .then((data)=> {
+                 console.log(data.data);
+                 setFlightsList(data.data);
                 
-        // })
+         })
             .catch((err) => {
                 throw new Error (err.stack)
             })
