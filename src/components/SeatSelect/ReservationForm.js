@@ -16,7 +16,7 @@ const ReservationForm =({selectedSeat, currentFlightId})=> {
     const submitReservation = (ev) => {
        ev.preventDefault();
         fetch("/api/add-reservation", {
-            method: "POST",
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json",},
         body: JSON.stringify({selectedSeat ,currentFlightId, givenName, surname, email}),
