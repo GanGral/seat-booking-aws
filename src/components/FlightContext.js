@@ -10,7 +10,7 @@ export const  FlightProvider = ({children}) => {
       
    
         useEffect(() => {
-            fetch("http://gettingstartedapp-env.eba-yu8qdnfp.us-east-2.elasticbeanstalk.com/api/get-flights")
+            fetch("/api/get-flights")
             //fetch("/test")
             //.then ((res) => res.text())
             .then ((res) => res.json())
