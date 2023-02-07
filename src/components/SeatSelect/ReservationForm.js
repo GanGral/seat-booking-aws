@@ -15,7 +15,7 @@ const ReservationForm =({selectedSeat, currentFlightId})=> {
     
     const submitReservation = (ev) => {
        ev.preventDefault();
-        fetch("/api/add-reservation", {
+        fetch("https://hidden-savannah-51883.herokuapp.com/api/add-reservation", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",},

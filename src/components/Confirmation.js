@@ -10,7 +10,7 @@ const Confirmation = () => {
 
   useEffect(() => {
     
-    fetch(`/api/get-reservation/${reservationNumber}`)
+    fetch(`https://hidden-savannah-51883.herokuapp.com/api/get-reservation/${reservationNumber}`)
     .then ((res) => res.json())
     .then((data)=> {
       console.log(data.data)

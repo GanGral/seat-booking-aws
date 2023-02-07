@@ -10,7 +10,7 @@ export const  FlightProvider = ({children}) => {
       
    
         useEffect(() => {
-            fetch("/api/get-flights")
+            fetch("https://hidden-savannah-51883.herokuapp.com/api/get-flights")
             //fetch("/test")
             //.then ((res) => res.text())
             .then ((res) => res.json())

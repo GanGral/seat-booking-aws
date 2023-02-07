@@ -9,7 +9,7 @@ console.log(currentFlightId);
 
   useEffect(() => {
     
-    fetch(`/api/get-flight/${currentFlightId}`)
+    fetch(`https://hidden-savannah-51883.herokuapp.com/api/get-flight/${currentFlightId}`)
     .then ((res) => res.json())
     .then((data)=> {
         setSeating(data?.data?.seats);
